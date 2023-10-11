@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Accounts\Extension\**" />
+    <Compile Remove="Roles\Extensions\Extension\**" />
+    <Compile Remove="Roles\Extensions\Request\**" />
+    <EmbeddedResource Remove="Accounts\Extension\**" />
+    <EmbeddedResource Remove="Roles\Extensions\Extension\**" />
+    <EmbeddedResource Remove="Roles\Extensions\Request\**" />
+    <None Remove="Accounts\Extension\**" />
+    <None Remove="Roles\Extensions\Extension\**" />
+    <None Remove="Roles\Extensions\Request\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Shared\Common\Common.csproj" />
+    <ProjectReference Include="..\..\Shared\Localization\Localization.csproj" />
+    <ProjectReference Include="..\Core.Accounts.DAL\Core.Accounts.DAL.csproj" />
+    <ProjectReference Include="..\Core.Accounts.Infrastructure\Core.Accounts.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+  </ItemGroup>
+
+</Project>

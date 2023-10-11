@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="AccountTenantMembership\Extension\" />
+    <Folder Include="Tenant\Extension\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core.Tenants.DAL\Core.Tenants.DAL.csproj" />
+    <ProjectReference Include="..\Core.Tenants.Infrastructure\Core.Tenants.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

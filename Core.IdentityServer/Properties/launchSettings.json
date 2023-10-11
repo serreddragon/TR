@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "Core.IdentntityServer": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "sqlDebugging": false,
+      "hotReloadEnabled": true,
+      "applicationUrl": "https://localhost:5001;",
+      "nativeDebugging": true
+    }
+  }
+}

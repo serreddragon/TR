@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Core.Accounts.Service": {
+      "commandName": "Project",
+      "hotReloadEnabled": true
+    }
+  }
+}
